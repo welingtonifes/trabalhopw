@@ -1,0 +1,126 @@
+*{
+    margin:0; 
+    padding:0; 
+    text-decoration: none;
+}
+
+body {
+    font-family: arial,helvetica,sans-serif;
+    font-size: 16px;
+}
+
+body form{
+    margin-top: 15px; 
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+#foraDoSite {
+    width: 100%;
+    min-width: 700px;    
+    height: 100%; 
+    float: left;
+    margin: 0px 0px;
+    margin-left: 0px; 
+    margin-right: 0px; 
+    background-image: url(../images/bgGeral.jpg);
+    background-size: 100% 100%;
+    padding: 0px;
+    background-repeat: no-repeat;
+    
+}
+
+#site {
+    width: 80%;
+    height: 100%;
+    margin-left:auto; 
+    margin-right:auto; 
+    background-color: yellow;
+    
+}
+#cabecalho {
+    width: 100%;
+    height: 160px;  
+    background-image: url(../images/Logo.png), url(../images/Fundo.jpg) ;
+    background-size: 100% 100%;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-color: #4b57fd;
+}
+#menuSuperior {
+    width: 100%;
+    height: 50px;
+    margin: 0px auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: beige;
+}
+
+ul,li{padding:0; margin:0; list-style:none;}
+
+#menu{padding:5px; width:99.1%; background:#7eaafc ; overflow:hidden; height:26px; text-align: center;}
+
+#menu li{float:left; padding:0 15px; width:130px; height: 30px; border-bottom: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC;}
+
+#menu li ul{position:absolute; display:none;}
+
+#menu li ul li{padding:2px 15px; float:none; background:dodgerblue; margin-left: -15px;}
+
+#menu li ul li ul{position:absolute; margin-left:140px; margin-top:-21px; padding: 0px 20px}
+
+#menu li ul li ul li{background:mediumaquamarine;}
+
+#menu li ul a:hover{background:#ff0; color:#f00;}
+
+#containerPrincipal {
+    width: 100%;
+    height: 80%;
+    margin: -20px auto;
+}
+
+#conteudo {
+    width: 85%;
+    height: 500px;
+    background: highlight;
+    float: right;
+    padding: 2px 0px 5px;    
+
+}
+#menuLateralEsquerda {
+    width: 15%;    
+    height: 507px; 
+    float: left;    
+/*    background-image: url(../images/Desert.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+    padding: 0px 0px;
+    margin: 0;
+    display: list-item;  
+    list-style: none;
+    background-color: cadetblue;
+}
+
+#menuLateralEsquerda ul li {
+    list-style-type: none;
+    display: table;
+}
+#menuLateralEsquerda li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 10px;
+    float: left;
+    color: #FFFFFF;
+}
+#menuLateralEsquerda li a:hover {
+    background-color: #CCCCCC;
+} 
+
+#rodape {
+    width: 100%;
+    height: 90px;
+    float: left;
+/*    background-image: url(../images/Lighthouse.jpg);
+    background-size: 100% 120px;
+    background-repeat: no-repeat;*/
+    background-color: royalblue;
+}
