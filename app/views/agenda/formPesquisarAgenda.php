@@ -1,4 +1,4 @@
-<?php ob_start();
+<?php
     include("app/session/validarSession.php");
     include ("bd/crudGenerico.php");
     include("app/controller/agenda/funcAgenda.php");

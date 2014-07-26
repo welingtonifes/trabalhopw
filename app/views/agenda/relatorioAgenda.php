@@ -1,4 +1,4 @@
-<?php ob_start();
+<?php
     include("app/session/validarSession.php");
 ?>
 <!DOCTYPE html>

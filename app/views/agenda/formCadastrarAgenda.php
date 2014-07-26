@@ -1,4 +1,4 @@
-<?php ob_start();
+<?php
     include ("app/session/validarSession.php");
     include ("bd/crudGenerico.php");
     include("app/controller/agenda/funcAgenda.php");
@@ -9,16 +9,19 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+       
         <title>CADASTRO DE AGENDAMENTOS</title>
-         
+      
+        
     <body>      
-        <form id="container" name="formCadastrarCliente" method="POST" action="app/controller/agenda/procInserirAgenda.php">
+        <form id="container" name="formCadastrarAgenda" method="POST" action="app/controller/agenda/procInserirAgenda.php">
                 <fieldset>
                     <legend>&nbsp;&nbsp;Informe os dados do Agendamento: &nbsp;&nbsp;</legend>
                     <br /> 
                     <label>
                         <span>Nome Paciente:</span>
-                        <input type="text" size=50 name="cod_paciente" />        
+                        <input type="text" size=50 name="cod_paciente" id ="nome" />  
+                       
                     </label>
                     &nbsp;&nbsp;&nbsp;&nbsp
                     <label>
@@ -34,7 +37,7 @@
                     <br />
                     <label>  
                         <span>Data:</span>
-                        <input size=30 type="text" id="campoData" class="jData" name="dt_agendamento"/>
+                        <input size=30 type="text" id="data" class="jData" name="dt_agendamento"/>
                     </label>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
                     <label>

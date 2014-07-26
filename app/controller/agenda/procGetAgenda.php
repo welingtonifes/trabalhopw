@@ -19,19 +19,20 @@
                     <br />
                     <label>
                         <span>Codigo:</span>
-                        <input type="text"  name="cod_agendamento" value="<?php echo $my['cod_agendamento']; ?>"/>        
+                        <input type="text"  name="cod_agendamento" value="<?php echo $my['cod_agendamento']; ?>" disabled/> 
+                        <input name="cod_agendamento" type="hidden" value="<?php echo $my['cod_agendamento']; ?>"/>
                     </label>
                     <br />
                     <br />
                     <label>
                         <span>Nome Paciente:</span>
-                        <input type="text" size=50 name="cod_paciente" value="<?php echo $my['cod_paciente']; ?>"/>        
+                        <input type="text" size=50 name="cod_paciente" value="<?php echo $my['nome_paciente']; ?>" />        
                     </label>
                     &nbsp;&nbsp;&nbsp;&nbsp
                     <label>
                         <span>Nome Dentista:</span>
                         <select name = "cod_dentista">
-                            <option value = "<?php echo $my['cod_dentista']; ?>"><?php echo $my['cod_dentista']; ?></option>
+                            <option value = "<?php echo $my['cod_dentista']; ?>"><?php echo $my['nome_dentista']; ?></option>
                              <?php while($dentista = $den->fetch_array(MYSQLI_ASSOC)) { ?>
                              <option value="<?php echo $dentista['cod_dentista'] ?>"><?php echo $dentista["nome_dentista"] ?></option>
 			     <?php } ?>
@@ -41,13 +42,13 @@
                     <br />
                     <label>  
                         <span>Data:</span>
-                        <input size=30 type="text"  name="dt_agendamento" value ="<?php echo $my['dt_agendamento']; ?>"/>
+                        <input type="text"  name="dt_agendamento"  id="data" class="jData" value ="<?php echo $my['dt_agendamento']; ?>"/>
                     </label>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
                     <label>
                         <span>Horario:</span>
                         <select name = "cod_horario">
-                            <option value = "<?php echo $my['cod_horario']; ?>"><?php echo $my['cod_horario']; ?></option>
+                            <option value = "<?php echo $my['cod_horario']; ?>"><?php echo $my['horario']; ?></option>
                              <?php while($horario = $hr->fetch_array(MYSQLI_ASSOC)) { ?>
                              <option value="<?php echo $horario['cod_horario'] ?>"><?php echo $horario["horario"] ?></option>
 			     <?php } ?>

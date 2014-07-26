@@ -1,8 +1,8 @@
 <?php
-              
+            
     //para usar o select genérico.
     include ("bd/crudGenerico.php");
-    if(isset($_POST["pesquisar"])){		
+    if(isset($_POST["pesquisar"])){	
         $cod_dentista = addslashes($_POST["cod_dentista"]);
         $dt_agendamento = addslashes($_POST["dt_agendamento"]);
         
