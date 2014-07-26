@@ -6,6 +6,11 @@
                 mysqli_set_charset($con,"utf8");
 		return $con;
 	}
+        /////// Funcao para fechar conexão com banco ////
+        function FechaConexao() {
+            $con = conn();
+            mysqli_close ($con); // aqui fecho a conexão se baseando na variável acima declarada
+        } 
 	////// Funcao de Retorno //////
 	function mysql_r($retorno){
 		$con = conn();		
