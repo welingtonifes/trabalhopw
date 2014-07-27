@@ -8,7 +8,7 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <title>Pesquisar Agendamentos</title>         
+        <title>ALTERAR CLIENTE</title>         
     </head>
     <body>      
         <form id="container" name="formAlterarCliente" method="POST" action="?id=17&idLateral=2">

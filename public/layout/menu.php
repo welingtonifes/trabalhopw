@@ -49,7 +49,7 @@
                     <ul>
                         <li><a href="?id=14">NOVO</a></li>                        
                         <li><a href="?id=18">PESQUISAR</a></li>
-                        <li><a href="?id=18">ALTERAR</a></li>
+                        <li><a href="?id=16">ALTERAR</a></li>
                         <li><a href="?id=15">EXCLUIR</a></li>
                     </ul>
                 </li>
