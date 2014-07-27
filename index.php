@@ -1,4 +1,4 @@
-<?php // ini_set('default_charset','UTF-8');?>
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
       <head>
