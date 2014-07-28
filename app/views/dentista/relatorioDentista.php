@@ -14,7 +14,7 @@
     </head>
     <body>  
         <div style="overflow:auto; margin-top: 5px; height: 90%;">
-            <table id="todosClientes" class="cell-border">
+            <table id="todosDentistas" class="cell-border">
                 <thead>
                     <tr>                        
                         <th>Nome</th>

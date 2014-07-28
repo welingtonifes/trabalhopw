@@ -82,6 +82,7 @@
                         <li>
                             <a href="?id=23&idLateral=0">SERVIÇOS</a>                            
                         </li>
+                        <li><a href="?id=15&idLateral=0">AGENDA</a></li>
                         <li>
                             <a href="#">PAGAMENTOS</a>
                             <ul>

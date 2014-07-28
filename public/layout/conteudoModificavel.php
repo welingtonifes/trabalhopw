@@ -50,13 +50,13 @@
                 include "app/views/agenda/formCadastrarAgenda.php";
                 break; 
             case 15:
-                include "app/views/agenda/formDeletarAgenda.php";
+                include "app/views/agenda/RelatorioAgenda.php";
                 break;
             case 16:
                 include "app/controller/agenda/procGetAgenda.php";
                 break;  
             case 17:
-                include "app/controller/agenda/procRelatorioAgenda.php";
+                include "app/controller/agenda/procExibirAgenda.php";
                 break; 
             case 18:
                 include "app/views/agenda/formPesquisarAgenda.php";
