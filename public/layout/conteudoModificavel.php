@@ -88,7 +88,22 @@
                 include "app/controller/atendente/procGetAtendente.php";
                 break; 
             case 28:
-                include "app/views/atendente/relatorioAtendente.php";                
+                include "app/views/atendente/relatorioAtendente.php";  
+            case 29:
+                include "app/views/dente/formCadastrardente.php";
+                break; 
+            case 30:
+                include "app/views/dente/formDeletardente.php";
+                break;
+            case 31:
+                include "app/views/dente/formAlterardente.php";
+                break;  
+            case 32:
+                include "app/controller/dente/procGetdente.php";
+                break; 
+            case 33:
+                include "app/views/dente/relatoriodente.php";
+                break;
         }
     }else{
         include("conteudoInicial.php");

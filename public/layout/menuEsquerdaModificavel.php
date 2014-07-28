@@ -22,6 +22,9 @@
             case 6:
                 include "addFormCadastrarAtendente.php";
                 break;
+            case 7:
+                include "addFormCadastrarDente.php";
+                break;
            
         }
     }else{

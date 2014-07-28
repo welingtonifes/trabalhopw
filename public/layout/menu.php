@@ -28,6 +28,7 @@
                             </ul>
                         </li>
                         <li><a href="?id=19&idLateral=5">SERVIÇOS</a></li>
+                         <li><a href="?id=29&idLateral= 7">DENTE</a></li>
                         <li>
                             <a href="#">Sub 3</a>
                             <ul>
