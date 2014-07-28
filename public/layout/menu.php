@@ -15,7 +15,7 @@
                             <a href="#">PESSOAS</a>
                             <ul>
                                 <li><a href="?id=2&idLateral=2">CLIENTE</a></li>
-                                <li><a href="?id=0">ATENDENTE</a></li>
+                                <li><a href="?id=24&idLateral=6">ATENDENTE</a></li>
                                 <li><a href="?id=9&idLateral=3">DENTISTA</a></li>
 <!--                                <li>
                                     <a href="#">Sub Sub 3</a>
@@ -66,7 +66,7 @@
                             <a href="#">PESSOAS</a>
                             <ul>
                                 <li><a href="?id=6&idLateral=0">CLIENTE</a></li>
-                                <li><a href="?id=0">ATENDENTE</a></li>
+                                <li><a href="?id=28&idLateral=0">ATENDENTE</a></li>
                                 <li><a href="?id=13&idLateral=0">DENTISTA</a></li>
 <!--                                <li>
                                     <a href="#">Sub Sub 3</a>

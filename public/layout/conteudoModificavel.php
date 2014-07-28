@@ -75,6 +75,20 @@
                 break; 
             case 23:
                 include "app/views/servico/relatorioServico.php";           
+            case 24:
+                include "app/views/atendente/formCadastrarAtendente.php";
+                break; 
+            case 25:
+                include "app/views/atendente/formDeletarAtendente.php";
+                break;
+            case 26:
+                include "app/views/atendente/formAlterarAtendente.php";
+                break;  
+            case 27:
+                include "app/controller/atendente/procGetAtendente.php";
+                break; 
+            case 28:
+                include "app/views/atendente/relatorioAtendente.php";                
         }
     }else{
         include("conteudoInicial.php");

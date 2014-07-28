@@ -13,8 +13,7 @@
                 <li><a href="?id=16&idLateral=4">ALTERAR</a></li>
                 <li><a href="?id=15&idLateral=4">EXCLUIR</a></li>
             </ul>
-            <br /> 
-            <h3>TESTE OS MENUS ACIMA PARA TRABALHAR JUNTO COM O CONTEÚDO AO LADO>>></h3>
+            <br />             
         </div> <!-- fim menuLateral -->
 
     </body>    

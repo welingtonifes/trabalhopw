@@ -9,9 +9,9 @@
             <br />
             <br />
             <ul>
-                <li><a href="?id=2&idLateral=2">NOVO</a></li>
-                <li><a href="?id=4&idLateral=2">ALTERAR</a></li>
-                <li><a href="?id=3&idLateral=2">EXCLUIR</a></li>
+                <li><a href="?id=24&idLateral=6">NOVO</a></li>
+                <li><a href="?id=26&idLateral=6">ALTERAR</a></li>
+                <li><a href="?id=25&idLateral=6">EXCLUIR</a></li>
             </ul>
             <br />             
         </div> <!-- fim menuLateral -->

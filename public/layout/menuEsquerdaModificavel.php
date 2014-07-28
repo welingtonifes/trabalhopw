@@ -14,11 +14,14 @@
                 include "addFormCadastrarCliente.php";
                 break;  
             case 3:
-                include "AddFormCadastrarDentista.php";
+                include "addFormCadastrarDentista.php";
                 break;
             case 5:
                 include "addFormCadastrarServico.php";
-                break;            
+                break; 
+            case 6:
+                include "addFormCadastrarAtendente.php";
+                break;
            
         }
     }else{
