@@ -17,10 +17,6 @@
         <script tabindex="text/javascript" src="../js/scripts.js"></script>
         <link rel = "stylesheet" href="../js/jquery-ui.style.css" type="text/css">
          
-       
-        
-        
-       
     </head>
     <body>        
         <div id="foraDoSite">

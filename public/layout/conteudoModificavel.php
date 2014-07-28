@@ -61,6 +61,20 @@
             case 18:
                 include "app/views/agenda/formPesquisarAgenda.php";
                 break;
+            case 19:
+                include "app/views/servico/formCadastrarServico.php";
+                break; 
+            case 20:
+                include "app/views/servico/formDeletarServico.php";
+                break;
+            case 21:
+                include "app/views/servico/formAlterarServico.php";
+                break;  
+            case 22:
+                include "app/controller/servico/procGetServico.php";
+                break; 
+            case 23:
+                include "app/views/servico/relatorioServico.php";           
         }
     }else{
         include("conteudoInicial.php");

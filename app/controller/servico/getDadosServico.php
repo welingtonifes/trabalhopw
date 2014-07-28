@@ -3,12 +3,12 @@
     include ("bd/crudGenerico.php");
     
     if(isset($_POST["alterar"])){		
-        $cpf = addslashes($_POST["cpf"]);
+        $nome = addslashes($_POST["nome"]);
         
         //informações para mandar ao select genérico
-        $tabela = "clientes";
-        $campos = "nome,cpf,sexo,nascimento,uf,cidade,bairro,rua,numero,cep,telefone,celular,email,status";
-        $condicao = " WHERE cpf="."'$cpf'";
+        $tabela = "servicos";
+        $campos = "idServico,nome,valor,status";
+        $condicao = " WHERE nome="."'$nome'";
         
         //retorna dados do select
         $my = mfa(seleciona($campos,$tabela,$condicao));

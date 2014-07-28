@@ -27,7 +27,7 @@
                                 </li>-->
                             </ul>
                         </li>
-                        <li><a href="#">SERVIÇOS</a></li>
+                        <li><a href="?id=19&idLateral=5">SERVIÇOS</a></li>
                         <li>
                             <a href="#">Sub 3</a>
                             <ul>
@@ -79,41 +79,7 @@
                             </ul>
                         </li> 
                         <li>
-                            <a href="#">SERVIÇOS</a>
-                            <ul>
-                                <li>
-                                    <a href="#">PESSOAS</a>
-                                    <ul>
-                                        <li><a href="?id=0">CLIENTE</a></li>
-                                        <li><a href="?id=0">ATENDENTE</a></li>
-                                        <li><a href="?id=0">DENTISTA</a></li>
-        <!--                                <li>
-                                            <a href="#">Sub Sub 3</a>
-                                            <ul>
-                                                <li><a href="#">Sub Sub Sub 1</a></li>
-                                                <li><a href="#">Sub Sub Sub 2</a></li>
-                                                <li><a href="#">Sub Sub Sub 3</a></li>
-                                            </ul>
-                                        </li>-->
-                                    </ul>
-                                </li>
-                                <li><a href="#">SERVIÇOS</a></li>
-                                <li>
-                                    <a href="#">Sub 3</a>
-                                    <ul>
-                                        <li><a href="#">Sub Sub 1</a></li>
-                                        <li><a href="#">Sub Sub 2</a></li>
-                                        <li>
-                                                <a href="#">Sub Sub 3</a>
-                                            <ul>
-                                                <li><a href="#">Sub Sub Sub 1</a></li>
-                                                <li><a href="#">Sub Sub Sub 2</a></li>
-                                                <li><a href="#">Sub Sub Sub 3</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <a href="?id=23&idLateral=0">SERVIÇOS</a>                            
                         </li>
                         <li>
                             <a href="#">PAGAMENTOS</a>
