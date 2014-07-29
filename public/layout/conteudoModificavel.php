@@ -90,19 +90,19 @@
             case 28:
                 include "app/views/atendente/relatorioAtendente.php";  
             case 29:
-                include "app/views/dente/formCadastrardente.php";
+                include "app/views/dente/formCadastrarDente.php";
                 break; 
             case 30:
-                include "app/views/dente/formDeletardente.php";
+                include "app/views/dente/formDeletarDente.php";
                 break;
             case 31:
-                include "app/views/dente/formAlterardente.php";
+                include "app/views/dente/formAlterarDente.php";
                 break;  
             case 32:
-                include "app/controller/dente/procGetdente.php";
+                include "app/controller/dente/procGetDente.php";
                 break; 
             case 33:
-                include "app/views/dente/relatoriodente.php";
+                include "app/views/dente/relatorioDente.php";
                 break;
         }
     }else{
