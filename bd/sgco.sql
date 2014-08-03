@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.12
+-- version 3.5.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Tempo de geração: 28/07/2014 às 03:54
--- Versão do servidor: 5.6.16
--- Versão do PHP: 5.5.11
+-- Servidor: localhost
+-- Tempo de Geração: 
+-- Versão do Servidor: 5.5.24-log
+-- Versão do PHP: 5.4.3
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Banco de dados: `sgco`
+-- Banco de Dados: `sgco`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `agenda`
+-- Estrutura da tabela `agenda`
 --
 
 CREATE TABLE IF NOT EXISTS `agenda` (
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `agenda` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
 
 --
--- Fazendo dump de dados para tabela `agenda`
+-- Extraindo dados da tabela `agenda`
 --
 
 INSERT INTO `agenda` (`cod_agendamento`, `cod_paciente`, `cod_dentista`, `dt_agendamento`, `cod_horario`) VALUES
@@ -53,7 +53,7 @@ INSERT INTO `agenda` (`cod_agendamento`, `cod_paciente`, `cod_dentista`, `dt_age
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `atendentes`
+-- Estrutura da tabela `atendentes`
 --
 
 CREATE TABLE IF NOT EXISTS `atendentes` (
@@ -75,10 +75,10 @@ CREATE TABLE IF NOT EXISTS `atendentes` (
   `login` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `senha` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`idAtendente`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=26 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=25 ;
 
 --
--- Fazendo dump de dados para tabela `atendentes`
+-- Extraindo dados da tabela `atendentes`
 --
 
 INSERT INTO `atendentes` (`idAtendente`, `nome`, `cpf`, `sexo`, `nascimento`, `uf`, `cidade`, `bairro`, `rua`, `numero`, `cep`, `telefone`, `celular`, `email`, `status`, `login`, `senha`) VALUES
@@ -90,7 +90,7 @@ INSERT INTO `atendentes` (`idAtendente`, `nome`, `cpf`, `sexo`, `nascimento`, `u
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cidade`
+-- Estrutura da tabela `cidade`
 --
 
 CREATE TABLE IF NOT EXISTS `cidade` (
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `cidade` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Fazendo dump de dados para tabela `cidade`
+-- Extraindo dados da tabela `cidade`
 --
 
 INSERT INTO `cidade` (`cod_cidade`, `nome_cidade`, `sigla_uf`) VALUES
@@ -111,7 +111,7 @@ INSERT INTO `cidade` (`cod_cidade`, `nome_cidade`, `sigla_uf`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `clientes`
+-- Estrutura da tabela `clientes`
 --
 
 CREATE TABLE IF NOT EXISTS `clientes` (
@@ -133,10 +133,10 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `login` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `senha` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`idCliente`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=26 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=25 ;
 
 --
--- Fazendo dump de dados para tabela `clientes`
+-- Extraindo dados da tabela `clientes`
 --
 
 INSERT INTO `clientes` (`idCliente`, `nome`, `cpf`, `sexo`, `nascimento`, `uf`, `cidade`, `bairro`, `rua`, `numero`, `cep`, `telefone`, `celular`, `email`, `status`, `login`, `senha`) VALUES
@@ -148,7 +148,29 @@ INSERT INTO `clientes` (`idCliente`, `nome`, `cpf`, `sexo`, `nascimento`, `uf`, 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `dentista`
+-- Estrutura da tabela `dente`
+--
+
+CREATE TABLE IF NOT EXISTS `dente` (
+  `cod_dente` int(10) NOT NULL AUTO_INCREMENT,
+  `desc_dente` varchar(40) DEFAULT NULL,
+  `numero` varchar(10) NOT NULL,
+  `quadrante` varchar(10) NOT NULL,
+  `status` varchar(100) NOT NULL,
+  PRIMARY KEY (`cod_dente`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Extraindo dados da tabela `dente`
+--
+
+INSERT INTO `dente` (`cod_dente`, `desc_dente`, `numero`, `quadrante`, `status`) VALUES
+(11, 'Molar superor esquerdo', '1', '2', 'ativo');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `dentista`
 --
 
 CREATE TABLE IF NOT EXISTS `dentista` (
@@ -173,7 +195,7 @@ CREATE TABLE IF NOT EXISTS `dentista` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
--- Fazendo dump de dados para tabela `dentista`
+-- Extraindo dados da tabela `dentista`
 --
 
 INSERT INTO `dentista` (`cod_dentista`, `nome_dentista`, `cpf`, `dt`, `sexo`, `sigla_uf`, `cod_cidade`, `bairro`, `rua`, `numero`, `cep`, `telefone`, `celular`, `email`, `status`, `login`, `senha`) VALUES
@@ -184,7 +206,7 @@ INSERT INTO `dentista` (`cod_dentista`, `nome_dentista`, `cpf`, `dt`, `sexo`, `s
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `horario`
+-- Estrutura da tabela `horario`
 --
 
 CREATE TABLE IF NOT EXISTS `horario` (
@@ -194,7 +216,7 @@ CREATE TABLE IF NOT EXISTS `horario` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
--- Fazendo dump de dados para tabela `horario`
+-- Extraindo dados da tabela `horario`
 --
 
 INSERT INTO `horario` (`cod_horario`, `horario`) VALUES
@@ -206,7 +228,37 @@ INSERT INTO `horario` (`cod_horario`, `horario`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `paciente`
+-- Estrutura da tabela `orcamento`
+--
+
+CREATE TABLE IF NOT EXISTS `orcamento` (
+  `cod_orcamento` int(10) NOT NULL AUTO_INCREMENT,
+  `cod_paciente` int(10) DEFAULT NULL,
+  `data` varchar(10) DEFAULT NULL,
+  `status` varchar(20) DEFAULT NULL,
+  `cod_tipo_pagamento` int(10) DEFAULT NULL,
+  `valorTotal` double DEFAULT NULL,
+  `valorFinal` double DEFAULT NULL,
+  `desconto` double DEFAULT NULL,
+  `entrada` double DEFAULT NULL,
+  `baixa` varchar(5) DEFAULT NULL,
+  `parcelas` int(11) DEFAULT NULL,
+  PRIMARY KEY (`cod_orcamento`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Extraindo dados da tabela `orcamento`
+--
+
+INSERT INTO `orcamento` (`cod_orcamento`, `cod_paciente`, `data`, `status`, `cod_tipo_pagamento`, `valorTotal`, `valorFinal`, `desconto`, `entrada`, `baixa`, `parcelas`) VALUES
+(1, 88, '02/12/2014', 'fechado', 1, 150.92, 143.374, 0.05, 80, 'baixa', 4),
+(2, 107, '15/19/1859', 'andamento', 0, 100.78, 0, 0, 80, 'baixa', 2),
+(6, 88, '06/08/2014', 'andamento', 0, 150.92, 150.92, 0, 0, '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `paciente`
 --
 
 CREATE TABLE IF NOT EXISTS `paciente` (
@@ -228,7 +280,7 @@ CREATE TABLE IF NOT EXISTS `paciente` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=111 ;
 
 --
--- Fazendo dump de dados para tabela `paciente`
+-- Extraindo dados da tabela `paciente`
 --
 
 INSERT INTO `paciente` (`cod_paciente`, `nome_paciente`, `cpf`, `dt`, `sexo`, `sigla_uf`, `cod_cidade`, `bairro`, `rua`, `numero`, `cep`, `telefone`, `celular`, `email`) VALUES
@@ -242,28 +294,96 @@ INSERT INTO `paciente` (`cod_paciente`, `nome_paciente`, `cpf`, `dt`, `sexo`, `s
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `servicos`
+-- Estrutura da tabela `parcela_orcamento`
+--
+
+CREATE TABLE IF NOT EXISTS `parcela_orcamento` (
+  `cod_par_orcamento` int(10) NOT NULL AUTO_INCREMENT,
+  `cod_orcamento` int(10) NOT NULL,
+  `data_vencimento` date NOT NULL,
+  `valor_vencimento` int(11) NOT NULL,
+  `pago` varchar(5) NOT NULL,
+  `data_pagamento` date NOT NULL,
+  PRIMARY KEY (`cod_par_orcamento`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `servicos`
 --
 
 CREATE TABLE IF NOT EXISTS `servicos` (
   `idServico` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
-  `valor` varchar(100) NOT NULL,
+  `valor` double NOT NULL,
   `status` varchar(100) NOT NULL,
   PRIMARY KEY (`idServico`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
--- Fazendo dump de dados para tabela `servicos`
+-- Extraindo dados da tabela `servicos`
 --
 
 INSERT INTO `servicos` (`idServico`, `nome`, `valor`, `status`) VALUES
-(5, 'plop', 'plop', 'ativo');
+(5, 'plop', 100.78, 'ativo'),
+(6, 'limpesa', 50.14, 'ativo');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `uf`
+-- Estrutura da tabela `servico_executado`
+--
+
+CREATE TABLE IF NOT EXISTS `servico_executado` (
+  `cod_orcamento` int(10) NOT NULL DEFAULT '0',
+  `idServico` int(10) NOT NULL DEFAULT '0',
+  `cod_dente` int(10) NOT NULL DEFAULT '0',
+  `cod_dentista` int(10) DEFAULT NULL,
+  PRIMARY KEY (`cod_orcamento`,`idServico`,`cod_dente`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `servico_executado`
+--
+
+INSERT INTO `servico_executado` (`cod_orcamento`, `idServico`, `cod_dente`, `cod_dentista`) VALUES
+(1, 0, 0, 0),
+(1, 5, 11, 3),
+(1, 6, 11, 5),
+(2, 5, 11, 5),
+(3, 5, 11, 4),
+(3, 6, 11, 3),
+(4, 5, 11, 3),
+(6, 5, 11, 3),
+(6, 6, 11, 5);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tipo_pagamento`
+--
+
+CREATE TABLE IF NOT EXISTS `tipo_pagamento` (
+  `cod_tipo_pagamento` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_tipo_pagamento` varchar(100) NOT NULL,
+  `descricao_tipo_pagamento` varchar(200) NOT NULL,
+  `status_tipo_pagamento` varchar(100) NOT NULL,
+  PRIMARY KEY (`cod_tipo_pagamento`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `tipo_pagamento`
+--
+
+INSERT INTO `tipo_pagamento` (`cod_tipo_pagamento`, `nome_tipo_pagamento`, `descricao_tipo_pagamento`, `status_tipo_pagamento`) VALUES
+(1, 'Dinheiro', 'Dinheiro', 'ativo'),
+(2, 'Cheque', 'cheque', 'ativo');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `uf`
 --
 
 CREATE TABLE IF NOT EXISTS `uf` (
@@ -273,7 +393,7 @@ CREATE TABLE IF NOT EXISTS `uf` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `uf`
+-- Extraindo dados da tabela `uf`
 --
 
 INSERT INTO `uf` (`sigla_uf`, `nome_uf`) VALUES
@@ -283,7 +403,7 @@ INSERT INTO `uf` (`sigla_uf`, `nome_uf`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `usuario`
+-- Estrutura da tabela `usuario`
 --
 
 CREATE TABLE IF NOT EXISTS `usuario` (
@@ -295,7 +415,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
--- Fazendo dump de dados para tabela `usuario`
+-- Extraindo dados da tabela `usuario`
 --
 
 INSERT INTO `usuario` (`cod_usuario`, `nome`, `login`, `senha`) VALUES

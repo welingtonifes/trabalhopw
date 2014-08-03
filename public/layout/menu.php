@@ -28,7 +28,8 @@
                             </ul>
                         </li>
                         <li><a href="?id=19&idLateral=5">SERVIÇOS</a></li>
-                         <li><a href="?id=29&idLateral= 7">DENTE</a></li>
+                        <li><a href="?id=29&idLateral= 7">DENTE</a></li>
+                        <li><a href="?id=50&idLateral=8">TIPO PAGAMENTO</a></li>
                         <li>
                             <a href="#">Sub 3</a>
                             <ul>
@@ -48,8 +49,16 @@
                 </li>
                 <li><a href="#">AGENDAMENTO</a>
                     <ul>
-                        <li><a href="?id=14">NOVO</a></li>                        
+                        <li><a href="?id=30">NOVO</a></li>                        
                         <li><a href="?id=18">PESQUISAR</a></li>
+                        <li><a href="?id=16">ALTERAR</a></li>
+                        <li><a href="?id=15">EXCLUIR</a></li>
+                    </ul>
+                </li>
+                 <li><a href="#">ORÇAMENTO</a>
+                    <ul>
+                        <li><a href="?id=34">NOVO</a></li>                        
+                        <li><a href="?id=41">PESQUISAR</a></li>
                         <li><a href="?id=16">ALTERAR</a></li>
                         <li><a href="?id=15">EXCLUIR</a></li>
                     </ul>
@@ -84,6 +93,8 @@
                         </li>
                         <li><a href="?id=15&idLateral=0">AGENDAMENTOS</a></li>
                          <li><a href="?id=33&idLateral=0">DENTES</a></li>
+                         <li><a href="?id=54&idLateral=0">TIPO PAGAMENTO</a></li>
+                         <li><a href="?id=43&idLateral=0">ORÇAMWNTO</a></li>
                         <li>
                             <a href="#">PAGAMENTOS</a>
                             <ul>

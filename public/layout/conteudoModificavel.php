@@ -104,6 +104,51 @@
             case 33:
                 include "app/views/dente/relatorioDente.php";
                 break;
+            case 34:
+                include "app/views/orcamento/formCadastrarOrcamento.php";
+                break; 
+            case 35:
+                include "app/views/orcamento/formCadastrarOrcamento_Servico.php";
+                break;
+            case 36:
+                include "app/views/orcamento/formAlterarOrcamento.php";
+                break;  
+            case 37:
+                include "app/controller/orcamento/procGetOrcamento.php";
+                break; 
+            case 38:
+                include "app/views/orcamento/formItenOrcamento.php";
+                break;
+            case 40:
+                include "app/controller/orcamento/procRelatorioOrcamento.php";
+                break;
+            case 41:
+                include "app/views/orcamento/formPesquisarOrcamento.php";
+                break;
+            case 42:
+                include "app/controller/orcamento/getDadosServivoOrcamento.php";
+                break;
+             case 43:
+                include "app/views/orcamento/relatorioOrcamento.php";
+                break;
+            case 50:
+                include "app/views/tipoPagamento/formCadastrarTipoPagamento.php";
+                break;  
+            case 51:
+                include "app/views/tipoPagamento/formDeletarTipoPagamento.php";
+                break;
+            case 52:
+                include "app/views/tipoPagamento/formAlterarTipoPagamento.php";
+                break;  
+            case 53:
+                include "app/controller/tipoPagamento/procGetTipoPagamento.php";
+                break; 
+            case 54:
+                include "app/views/tipoPagamento/relatorioTipoPagamento.php";
+                break; 
+            case 55:
+                include "app/controller/tipoPagamento/procGetTipoPagamento.php";
+                break;       
         }
     }else{
         include("conteudoInicial.php");

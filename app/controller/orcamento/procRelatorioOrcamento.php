@@ -10,27 +10,30 @@
              <center>
             <table border = "5" align = "center">
 		    <tr>
-				<td colspan="16"><h3>Agendamentos</h3></td>
+				<td colspan="16"><h3>Orcamentos</h3></td>
 			</tr>
 			<tr>
                                 <td>codigo</td>
-				<td>Dente</td>
-				<td>Procedimento</td>
+				<td>Paciente</td>
+				<td>data</td>
 				<td>Valor</td>
+                                <td>status</td>
+                                <td>Alterar</td>
+                                <td>Excluir</td>
 			</tr>
                         <tr>
     <?php
         //chama o arquivo que pega os dados no banco antes de carregar o html abaixo.
-        require ("procPesquisarProcOrcamento.php"); 
+        require ("procPesquisarOrcamento.php"); 
         while ($linha = mfa($my)) {
     ?>
-                                <td><?php echo $linha['cod_proc_orcamento'];?> </td>
-				<td><?php echo $linha['cod_dente'];?> </td>
-				<td><?php echo $linha['cod_tipo_servico'];?> </td>
-				<td><?php echo $linha['valor'];?> </td>
-				<td><?php echo $linha['horario'];?> </td>
-				<td><a href="?id=16 & cod_proc_orcamento=<?php echo $linha['cod_proc_orcamento'];?>"><img src="public/images/alterar.jpg" width="15" height="15"/></a></td>
-			        <td><a href="app/controller/agenda/procDeletarAgenda.php?cod_proc_orcamento=<?php echo $linha['cod_proc_orcamento'];?>"><img src="public/images/excluir.jpg" width="15" height="15"/></a><br /></td>
+                                <td><?php echo $linha['cod_orcamento'];?> </td>
+				<td><?php echo $linha['nome_paciente'];?> </td>
+				<td><?php echo $linha['data'];?> </td>
+				<td><?php echo $linha['valorFinal'];?> </td>
+				<td><?php echo $linha['status'];?> </td>
+				<td><a href="?id=37 & cod_orcamento=<?php echo $linha['cod_orcamento'];?>"><img src="public/images/alterar.jpg" width="15" height="15"/></a></td>
+			        <td><a href="app/controller/agenda/procDeletarAgenda.php?cod_orcamento=<?php echo $linha['cod_orcamento'];?>"><img src="public/images/excluir.jpg" width="15" height="15"/></a><br /></td>
 				
 			</tr>
     <?php

@@ -80,7 +80,7 @@ ul,li{padding:0; margin:0; list-style:none;}
 
 #conteudo {
     width: 85%;
-    height: 500px;
+    height: 610px;
     background: #fff;
     float: right;
     padding: 2px 0px 5px;    
@@ -88,7 +88,7 @@ ul,li{padding:0; margin:0; list-style:none;}
 }
 #menuLateralEsquerda {
     width: 15%;    
-    height: 507px; 
+    height: 618px; 
     float: left;    
 /*    background-image: url(../images/Desert.jpg);
     background-size: 100% 100%;

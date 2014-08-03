@@ -28,6 +28,10 @@
                 $in = mysql_r("insert into " .$tabela. " values (''," .$array. ")");                
                 return $in;		
 	}	
+        function insere2($tabela, $campos,$array){
+                $in = mysql_r("insert into " .$tabela. " values (" .$array. ")");                
+                return $in;		
+	}
 	////// Funcao para Deletar //////
 	function deleta($tabela,$condicao){
 			$del = mysql_r("DELETE FROM $tabela $condicao");

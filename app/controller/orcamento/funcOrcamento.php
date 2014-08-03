@@ -1,60 +1,98 @@
 <?php
     //para usar o select genérico.
     //include ("bd/crudGenerico.php");
-    // Função para listar dentistas
+    /// Função para listar orçamentos///////
+    function listarOrcamento($cod){
+        $camp =  "*";
+        $condicao= "WHERE cod_orcamento = $cod";
+        $tab = "orcamento";
+         
+         $linha = seleciona($camp,$tab,$condicao);
+                if(mnr($linha) ==0){
+                        echo "Nenhum resultado encontrado";
+                }
+                $my = mfa($linha);
+                return $my;
+        }
+    ///// Listar servicos prestados
+    function listarServicoPrestado($cod){
+        $camp =  "se.cod_orcamento,se.idServico,dt.desc_dente,d.nome_dentista,s.nome";
+        $condicao= " WHERE se.cod_orcamento = '$cod' "
+                . " AND se.cod_dente = dt.cod_dente "
+                . " AND se.cod_dentista = d.cod_dentista "
+                . " AND se.idServico = s.idServico ";
+        $tab = "servico_executado se,"
+                . "dente dt,"
+                . "dentista d,"
+                . "servicos s";
+   
+        $linha = seleciona($camp,$tab,$condicao);
+                if(mnr($linha) ==0){
+                        echo "Nenhum resultado encontrado";
+                }
+        return $linha;
+        
+    }
+    /////Listar formas de pagamento //////////
+    function listarTipoPagamento(){
+        $camp =  "*";
+        $condicao= "";
+        $tab = "tipo_pagamento";
+        $linha = seleciona($camp,$tab,$condicao);
+                if(mnr($linha) ==0){
+                        echo "Nenhum resultado encontrado";
+
+                }
+        return $linha;
+    }
+    /////// Listar Servicos ///////////////
+    function listarServicos(){
+        $camp =  "*";
+        $condicao= "";
+        $tab = "servicos";
+        $linha = seleciona($camp,$tab,$condicao);
+                if(mnr($linha) ==0){
+                        echo "Nenhum resultado encontrado";
+
+                }
+        return $linha;
+    }
+     /////// Listar Dentistas ///////////////
     function listarDentista(){
-   
-        //informações para mandar ao select genérico
-        $tabela = "dentista";
-        $campos = "cod_dentista,nome_dentista";
-        $condicao = "";
-        
-        //retorna dados do select
-        $my = seleciona($campos,$tabela,$condicao);
-        
+        $camp =  "*";
+        $condicao= "";
+        $tab = "dentista";
+        $linha = seleciona($camp,$tab,$condicao);
+                if(mnr($linha) ==0){
+                        echo "Nenhum resultado encontrado";
+
+                }
+        return $linha;
+    }
+     /////// Listar Dentes ///////////////
+    function listarDente(){
+        $camp =  "*";
+        $condicao= "";
+        $tab = "dente";
+        $linha = seleciona($camp,$tab,$condicao);
+                if(mnr($linha) ==0){
+                        echo "Nenhum resultado encontrado";
+
+                }
+        return $linha;
+    }
+    function listarValor($idServico){
+        $camp =  "*";
+        $condicao= "WHERE idServico = $idServico";
+        $tab = "servicos";
+        $linha = seleciona($camp,$tab,$condicao);
+                if(mnr($linha) ==0){
+                        echo "Nenhum resultado encontrado";
+
+                }
+                
+        $my = mfa($linha);
         return $my;
-    } 
-     // Função para listar horarios
-   	function listarHorario(){
-   
-        //informações para mandar ao select genérico
-        $tabela = "horario";
-        $campos = "cod_horario,horario";
-        $condicao = "";
-        
-        //retorna dados do select
-        $my = seleciona($campos,$tabela,$condicao);
-        return $my;
-    } 
+    }
     
-     // Função para listar horarios
-   	function listarPaciente(){
-   
-        //informações para mandar ao select genérico
-        $tabela = "paciente";
-        $campos = "cod_paciente,nome_paciente";
-        $condicao = "WHERE ";
-        
-        //retorna dados do select
-        $my = seleciona($campos,$tabela,$condicao);
-        return $my;
-    } 
-    function pesquisaAgenda($cod_dentista,$dt_agendamento){
-		$result = seleciona("a.cod_agendamento,p.nome,d.nome,dt_agendamento,h.horario",
-                        "agenda a,"
-                        . "paciente p,"
-                        . "horario h"
-                        ."WHERE `cod_dentista` = '$cod_dentista' "
-                        . "AND `dt_agendamento` = '$dt_agendamento'"
-                        . "AND a.cod_paciente = p.cod_paciente"
-                        . "AND a.cod_horario = h.cod_horario");
-			if(mnr($result) ==0){
-				echo "Nenhum resultado encontrado";
-				
-			}
-		while ($linha = mfa($result)) {
-				return $linha;
-		}
-	}
-   
 ?>
